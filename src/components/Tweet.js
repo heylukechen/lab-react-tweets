@@ -10,13 +10,12 @@ function Tweet(props) {
       <ProfileImage image={props.tweet.user.image} />
       <div className="body">
         <div className="top">
-          <User username={props.tweet.user.name} />
+          <User username={props.tweet.user.name} handle={props.tweet.user.handle} />
           <Timestamp timestamp={props.tweet.timestamp} />
         </div>
         <Message message={props.tweet.message} />
         <Actions />
       </div>
-
       <i className="fas fa-ellipsis-h"></i>
     </div>
   );
